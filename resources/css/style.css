@@ -246,6 +246,20 @@ header {
     transition: 0.5s;
 }
 
+/* Mobile navi */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #ffffff;
+}
+
 /* Sticky navi */
 .sticky {
     position: fixed;
@@ -592,4 +606,27 @@ footer p {
     color: #888888;
     text-align: center;
     margin-top: 20px;
+}
+
+/*------------------------------------------------*/
+/* ANIMATION */
+/*------------------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
 }
